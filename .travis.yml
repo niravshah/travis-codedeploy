@@ -9,4 +9,4 @@ deploy:
   revision_type: github
   application: HomeFixApp
   deployment_group: HomeFiixDepGrp
-  
+  region: eu-central-1
