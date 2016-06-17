@@ -2,3 +2,13 @@ language: node_js
 node_js:
 - '0.11'
 - '0.10'
+deploy:
+  provider: s3
+  access_key_id: AKIAJ4JY6YMFFYGXF4DA
+  secret_access_key:
+    secure: Shmu1RKK3EOMsX1gfQ+W+it42OnV0XD+7bNCQe5vdDj/08GsdXRVRmPyT81cnE8SJ9ETYWWPNQUTZ5B//LiJ72EVB+5XCkBFVsyKnOVINF6E5Cx1+mbQUVIWjgww3q62WwJhXTKNaCuGcL97TM1qAuHaBQ1O1nn8g7Oqdpd1abMk/AJtBvHbQ7GoLEPsKeGsSJmPn1uv/o+k4rBVgcL9RXjf4ic6PcVDmSFOzmA46Id3H2zZe0Ypgr+QPKaEZEet7KofeABB3uB/ruSIVyRIgEaOGoZM4EQW4vssg6yAm2vWYc1VVYVIQ+mPwxOlMzuflfzbTIZLMjuPa/39hGpXdc26V3PPG7PEU3tLLxiwK+/CBX1xkK1s5N4AwCGSGLtHXQYxkhNYHjn/sFCgFC0n/LCbhLVqWoylhp3ymZMHTe8bp+funb66XAFDuhA5dp7Dw/XrQIFvjrE5f0rZXbnh6Sgtmvujm5B2ZdERfsMBq+JGngzVd2o0u4PjM/PsiCzId0+KGcU1gmPVDG+NLvWd4Yjv15NcsF9E9BuJMNGez4HtSZ2HUbXaAYAWkL17Vy5QSpZAf2NjBOPjlVYHS5uP5QIksaMLfaxSZ89wi/vmZKoRh63pJ2hl8ZLZgGDwnlohnIba6tbO0ZO+zBJE4dZbW4CkVHcNTuDpzLH6n7lGmO8=
+  bucket: homefix-codedeploy-travis
+  local-dir: y
+  acl: ''
+  on:
+    repo: niravshah/travis-codedeploy
